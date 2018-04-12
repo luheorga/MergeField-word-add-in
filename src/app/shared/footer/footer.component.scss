@@ -1,0 +1,40 @@
+
+$footer-font: "proxima-nova", sans-serif;
+$footer-color: #333;
+$footer-hover: tint($footer-color, 50%);
+
+.footer {
+  z-index: 100000000;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+ // @include display(flex);
+}
+
+.text{
+  color: $footer-color;
+  font-family: $footer-font;
+  font-size: 14px;
+  font-weight: 200;
+  margin-right: 5px;
+  & a{
+        //@include transition(all 0.3s ease);
+        text-decoration: none;
+        color: $footer-color;
+        &:hover{
+            text-decoration: underline;
+            color: $footer-hover;
+        }
+    }
+}
+
+.icons a {
+  //@include transition(all 0.3s ease);
+  margin: 0 5px 0;
+  color: $footer-color;
+  text-align: center;
+  text-decoration: none;
+  &:hover{
+        color: $footer-hover;
+    }
+}

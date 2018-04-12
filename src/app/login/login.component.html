@@ -1,9 +1,27 @@
 <div class="login">
-  <div class="login-triangle"></div>  
+  <div class="login-triangle"></div>
   <div class="login-header"></div>
-  <form #loginForm="ngForm" class="login-container">
-    <p><input type="text" placeholder="Usuario" #UserName ngModel name="UserName" required></p>
-    <p><input type="password" placeholder="Contraseña" #Password ngModel name="Password" required></p>
-    <p><input class="ms-Button ms-Button--primary" type="submit" [disabled]="!loginForm.valid" value="Entrar"></p>  
+  <form #loginForm="ngForm" class="col s12 white" (ngSubmit)="OnSubmit(UserName.value,Password.value)">
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="username" class="validate" type="text" #UserName ngModel name="UserName" required>
+        <label for="username">Usuario</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">vpn_key</i>
+        <input id="password" class="validate" type="password" #Password ngModel name="Password" required>
+        <label for="password">Contraseña</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <input class="btn" type="submit" [disabled]="!loginForm.valid" value="Entrar">
+      </div>
+    </div>
   </form>
 </div>
+<app-footer></app-footer>
