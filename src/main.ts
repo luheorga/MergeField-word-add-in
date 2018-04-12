@@ -10,7 +10,14 @@ if (environment.production) {
 
 declare const Office: any;
 
-Office.initialize = () => {
-platformBrowserDynamic().bootstrapModule(AppModule)
+function launch() {
+  platformBrowserDynamic().bootstrapModule(AppModule)
     .catch(err => console.log(err));
-};
+}
+if (window.hasOwnProperty('Office') && window.hasOwnProperty('Word')) {
+  Office.initialize = () => { launch(); }
+}
+else {
+  launch();
+}
+

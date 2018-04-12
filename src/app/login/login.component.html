@@ -1,0 +1,9 @@
+<div class="login">
+  <div class="login-triangle"></div>  
+  <div class="login-header"></div>
+  <form #loginForm="ngForm" class="login-container">
+    <p><input type="text" placeholder="Usuario" #UserName ngModel name="UserName" required></p>
+    <p><input type="password" placeholder="Contraseña" #Password ngModel name="Password" required></p>
+    <p><input class="ms-Button ms-Button--primary" type="submit" [disabled]="!loginForm.valid" value="Entrar"></p>  
+  </form>
+</div>
