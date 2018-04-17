@@ -9,6 +9,9 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavigationHeaderComponent } from './shared/navigation-header/navigation-header.component';
+import { AngularMaterialModule } from './shared/angular-material/angular-material.module';
+import { InstructionsComponent } from './instructions/instructions.component';
+
 
 
 @NgModule({
@@ -17,12 +20,14 @@ import { NavigationHeaderComponent } from './shared/navigation-header/navigation
     LoginComponent,
     HomeComponent,
     FooterComponent,
-    NavigationHeaderComponent
+    NavigationHeaderComponent,
+    InstructionsComponent    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AngularMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

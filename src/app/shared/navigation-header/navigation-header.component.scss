@@ -1,0 +1,9 @@
+$wordColor: #0078d7;
+.wordColor{
+    background-color: $wordColor !important;
+}
+.mat-icon-button{
+    border-radius: 2px;
+    background-color: $wordColor;
+    color: whitesmoke;
+}

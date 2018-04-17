@@ -1,3 +1,21 @@
-<p>
-  navigation-header works!
-</p>
+<mat-toolbar>
+  <mat-toolbar-row class="wordColor">
+    <button mat-icon-button class="mat-raised-button" [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>library_books</mat-icon>
+        <span>Instrucciones</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>build</mat-icon>
+        <span>Configuración</span>
+      </button>
+      <button mat-menu-item (click)="CloseSession()">
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Salir</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
