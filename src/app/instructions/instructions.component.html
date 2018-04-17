@@ -1,22 +1,23 @@
-<main>
+<main class="mat-typography">
     <section class="header">
-        <div class="title">Complemento para Word de Orión</div>
+        <div class="mat-title">Complemento para Word de Orión</div>
         <div class="desc">Este complemento es una nota.</div>
     </section>
     <div class="body">
-        <mat-list>
-            <mat-list-item>
-                <div class="ps-list-number">1</div>
-                <p class="ps-list-desc">Selecione el modelo con la definición de variables que desea utilizar en la plantilla</p>
-            </mat-list-item>
-            <mat-list-item>
-                <div class="ps-list-number">2</div>
-                <p class="ps-list-desc">Agregué los campos de combinación de correspondencia del modelo en el lugar en donde quiere que sean reemplazados</p>
-            </mat-list-item>
-            <mat-list-item>
-                <div class="ps-list-number">3</div>
-                <p class="ps-list-desc">Cuando haya termiando de agregar los campos que necesita guarde la platilla y carguela en Oríon</p>
-            </mat-list-item>
-        </mat-list>
+        <mat-vertical-stepper>
+            <mat-step label="Seleccione el modelo">
+                Selecione el modelo con la definición de variables que desea utilizar en la plantilla
+            </mat-step>
+            <mat-step label="Agregue los campos en la plantilla">
+                Agregué los campos de combinación de correspondencia del modelo en el lugar en donde quiere que sean reemplazados
+            </mat-step>
+            <mat-step label="Salve la plantilla">
+                Cuando haya termiando guarde la platilla y carguela en Oríon
+            </mat-step>
+            <mat-step label="Todo listo!">
+                Ya puede empezar a crear y editar plantillas en Orión!, vaya a la pantalla principal para selecionar el modelo haciendo
+                click <span>Aqui!</span>
+            </mat-step>
+        </mat-vertical-stepper>       
     </div>
 </main>
