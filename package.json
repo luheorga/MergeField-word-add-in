@@ -23,6 +23,7 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@types/office-js": "0.0.55",
     "core-js": "^2.4.1",
     "materialize-css": "^1.0.0-beta",
     "rxjs": "^5.5.6",

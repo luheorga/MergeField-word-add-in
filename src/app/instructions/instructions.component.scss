@@ -1,3 +1,4 @@
+@import '~@angular/material/theming';
 $wordColor: #0078d7;
 .mat-step-icon {
     background-color: $wordColor;
@@ -13,5 +14,17 @@ $wordColor: #0078d7;
             flex-wrap: nowrap;    
     .desc{
         margin-top: 15px;
+    }
+}
+.router-link {
+    padding: 5px;
+    text-decoration: none;   
+    @include mat-elevation-transition; 
+    @include mat-elevation(0);
+    &:visited{
+        color: #444;
+    }
+    &:hover{
+        @include mat-elevation(3);
     }
 }

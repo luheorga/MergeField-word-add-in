@@ -11,6 +11,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { NavigationHeaderComponent } from './shared/navigation-header/navigation-header.component';
 import { AngularMaterialModule } from './shared/angular-material/angular-material.module';
 import { InstructionsComponent } from './instructions/instructions.component';
+import { OrionToDocComponent } from './orion-to-doc/orion-to-doc.component';
+import { WordDocumentService } from './services/word-document/word-document.service';
 
 
 
@@ -21,7 +23,8 @@ import { InstructionsComponent } from './instructions/instructions.component';
     HomeComponent,
     FooterComponent,
     NavigationHeaderComponent,
-    InstructionsComponent    
+    InstructionsComponent,
+    OrionToDocComponent    
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,7 @@ import { InstructionsComponent } from './instructions/instructions.component';
     FormsModule,
     AngularMaterialModule
   ],
-  providers: [],
+  providers: [WordDocumentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

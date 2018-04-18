@@ -1,0 +1,6 @@
+<form #MFForm="ngForm" (ngSubmit)="SetMergeField(Field.value)">
+  <mat-form-field>
+    <input matInput type="text" placeholder="Nombre campo" #Field ngModel name="Field" required>
+  </mat-form-field>
+  <button mat-raised-button [disabled]="!MFForm.valid">Agregar</button> 
+</form>

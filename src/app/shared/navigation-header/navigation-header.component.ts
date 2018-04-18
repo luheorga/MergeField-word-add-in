@@ -14,5 +14,8 @@ export class NavigationHeaderComponent {
     //TODO haces la lógica del logout
     this.router.navigate(['/login']);
   }
+  ShowInstructions(){
+    this.router.navigate(['/home/instructions']);
+  }
 
 }

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { InstructionsComponent } from './instructions/instructions.component';
+import { OrionToDocComponent } from './orion-to-doc/orion-to-doc.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -11,10 +12,11 @@ const routes: Routes = [
     component: HomeComponent,
     children: [
       { path: 'instructions', component: InstructionsComponent },
-      { path: '', redirectTo: '\instructions', pathMatch: 'full' }
+      { path: 'main', component: OrionToDocComponent },
+      { path: '', redirectTo: 'instructions', pathMatch: 'full' }
     ]
   },
-  { path: '', redirectTo: '\login', pathMatch: 'full' }
+  { path: '', redirectTo: 'login', pathMatch: 'full' }
 ];
 
 @NgModule({
